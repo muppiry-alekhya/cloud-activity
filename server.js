@@ -11,17 +11,17 @@ app.use(express.urlencoded()) // for parsing application/x-www-form-urlencoded
 
 //http://localhost:3000/
 app.get('/', function (req, res) {
-    res.send("<h1>Hi There!!</h1>");
+    res.send("<h1>Hi welcome to cloud computing class!!</h1>");
     res.end();
 })
 
 app.get('/name', function (req, res) {
-    res.send("<h1>What's your name!!</h1>");
+    res.send("<h1>Name: Alekhya!!</h1>");
     res.end();
 })
 
-app.get('/age', function (req, res) {
-    res.send("<h1>What's your age!!</h1>");
+app.get('/contact', function (req, res) {
+    res.send("<h1>Contact : muppiry.alekhya49@gmail.com!!</h1>");
     res.end();
 })
 app.listen(process.env.PORT  || SERVER_PORT, () => {
